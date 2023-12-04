@@ -8,21 +8,17 @@ class Day01Test {
 
     @Test
     fun exampleTest() {
-        val calibrationValues = fileUtil.getRows()
-
         val day01 = Day01()
-        val calibrationSum = day01.execute(calibrationValues)
+        val output = day01.execute(fileUtil.getRows())
 
-        assertEquals(281, calibrationSum)
+        assertEquals(281, output)
     }
 
     @Test
     fun test() {
-        val calibrationValues = fileUtil.getRows()
-
         val day01 = Day01()
-        val calibrationSum = day01.execute(calibrationValues)
+        val output = day01.execute(fileUtil.getRows())
 
-        assertEquals(54418, calibrationSum)
+        assertEquals(54418, output)
     }
 }
